@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E80C52AE29674B540058CBAA /* SimpleMathFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E80C52AD29674B540058CBAA /* SimpleMathFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E80C52B529674B6A0058CBAA /* SimpleMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80C52B429674B6A0058CBAA /* SimpleMath.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E80C52AA29674B540058CBAA /* SimpleMathFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleMathFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80C52AD29674B540058CBAA /* SimpleMathFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleMathFramework.h; sourceTree = "<group>"; };
+		E80C52B429674B6A0058CBAA /* SimpleMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMath.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 		E80C52A029674B540058CBAA = {
 			isa = PBXGroup;
 			children = (
+				E80C52B429674B6A0058CBAA /* SimpleMath.swift */,
 				E80C52AC29674B540058CBAA /* SimpleMathFramework */,
 				E80C52AB29674B540058CBAA /* Products */,
 			);
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					E80C52A929674B540058CBAA = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E80C52B529674B6A0058CBAA /* SimpleMath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		E80C52B229674B540058CBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		E80C52B329674B540058CBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
