@@ -29,5 +29,9 @@ public class SimpleAlgorithms {
         }
         return result
     }
+    
+    public static func square(_ n: Int) -> Int {
+        return  n*n
+    }
 
 }
