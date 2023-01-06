@@ -9,7 +9,7 @@ import Foundation
 
 public class SimpleAlgorithms {
 
-    public func fibonacci(_ n: Int) -> Int {
+    public static func fibonacci(_ n: Int) -> Int {
         var a = 1
         var b = 1
         guard n > 1 else { return a }
@@ -20,7 +20,7 @@ public class SimpleAlgorithms {
         return a
     }
 
-    public func factorial(n: Int) -> Int {
+    public static func factorial(n: Int) -> Int {
         var result = 1
         if n > 0 {
             (1...n).forEach { i in
