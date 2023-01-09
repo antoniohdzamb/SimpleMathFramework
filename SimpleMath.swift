@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SimpleAlgorithms {
+public struct SimpleAlgorithms {
 
     public static func fibonacci(_ n: Int) -> Int {
         var a = 1
